@@ -6,7 +6,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
    
-    <sap:connector name="SAP" jcoAsHost="3.213.105.162" jcoUser="MULESOFT" jcoPasswd="FD&gt;w(n9g4e6&amp;&lt;9wVXGE5d2MH[+g~Lpq37co=wlr=" jcoSysnr="03" jcoClient="200" jcoLang="en" validateConnections="true" doc:name="SAP"/>
+    <sap:connector name="SAP" jcoAsHost="${sap.Host}" jcoUser="${sap.User}" jcoPasswd="${sap.Pass}" jcoSysnr="${sap.Sysn}" jcoClient="${sap.Clie}" jcoLang="${sap.Lang}" validateConnections="true" doc:name="SAP"/>
    
     <flow name="teste-acesso-sapFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/teste" doc:name="HTTP"/>

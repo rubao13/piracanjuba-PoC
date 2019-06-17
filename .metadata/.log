@@ -6388,3 +6388,172 @@ java.lang.NullPointerException
 	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
 	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
 	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+!SESSION 2019-06-17 12:00:46.959 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2019-06-17 12:03:58.502
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-17 12:03:58.502
+!MESSAGE A conflict occurred for CTRL+F:
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findReplace,Find and Replace,
+		Find and replace text,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4ce66169,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.ui.dfl.contribution.commands.searchCommand,Find/Replace,
+		Find/Replace,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53d0cf4d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.commands.focusSearchCommand,Focus Search Command,
+		Focus Search in Palette,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c6c87fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+
+!ENTRY org.mule.tooling.core 1 0 2019-06-17 12:04:04.480
+!MESSAGE While generating classpath found that /opt/AnypointStudio65/plugins/org.mule.tooling.server.3.9.1.ee_6.4.2.201804231909/mule/lib/endorsed/ is not a directory.
+
+!ENTRY org.mule.tooling.core 1 0 2019-06-17 12:04:04.480
+!MESSAGE While generating classpath found that /opt/AnypointStudio65/plugins/org.mule.tooling.server.3.9.1.ee_6.4.2.201804231909/mule/lib/endorsed/ is not a directory.
+
+!ENTRY org.mule.tooling.core 2 0 2019-06-17 12:05:14.095
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2019-06-17 12:05:14.095
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.eventBus 4 0 2019-06-17 12:32:27.800
+!MESSAGE Unexpected error.
+!STACK 0
+java.lang.NullPointerException
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.innerResolve(MuleConfigurationValidator.java:265)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.resolve(MuleConfigurationValidator.java:182)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator$XMLDomainValidatorVisitor.resolveElement(MuleConfigurationValidator.java:535)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainValidatorVisitor.collectChildNodes(DomainValidatorVisitor.java:214)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainValidatorVisitor.enterNode(DomainValidatorVisitor.java:104)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:92)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:97)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.doValidate(MuleConfigurationValidator.java:177)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.collectErrorMessages(MuleConfigurationValidator.java:166)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.validate(MuleConfigurationValidator.java:134)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator.innerValidate(AbstractMuleValidator.java:80)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator.access$0(AbstractMuleValidator.java:75)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator$1.call(AbstractMuleValidator.java:67)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator$1.call(AbstractMuleValidator.java:1)
+	at org.mule.tooling.utils.SilentRunner.run(SilentRunner.java:25)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:17)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:37)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator.validateWithUri(AbstractMuleValidator.java:63)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator.validate(AbstractMuleValidator.java:53)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.validate(MuleConfigurationValidator.java:120)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+
+!ENTRY org.mule.tooling.eventBus 4 0 2019-06-17 12:32:27.804
+!MESSAGE Unexpected error.
+!STACK 0
+java.lang.NullPointerException
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.innerResolve(MuleConfigurationValidator.java:265)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.resolve(MuleConfigurationValidator.java:182)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator$XMLDomainValidatorVisitor.resolveElement(MuleConfigurationValidator.java:535)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainValidatorVisitor.collectChildNodes(DomainValidatorVisitor.java:214)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainValidatorVisitor.enterNode(DomainValidatorVisitor.java:104)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:92)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:97)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.doValidate(MuleConfigurationValidator.java:177)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.collectErrorMessages(MuleConfigurationValidator.java:166)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.validate(MuleConfigurationValidator.java:134)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator.innerValidate(AbstractMuleValidator.java:80)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator.access$0(AbstractMuleValidator.java:75)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator$1.call(AbstractMuleValidator.java:67)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator$1.call(AbstractMuleValidator.java:1)
+	at org.mule.tooling.utils.SilentRunner.run(SilentRunner.java:25)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:17)
+	at org.mule.tooling.core.StudioDesignContextRunner.runSilentWithMuleProject(StudioDesignContextRunner.java:37)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator.validateWithUri(AbstractMuleValidator.java:63)
+	at org.mule.tooling.ui.modules.core.validation.AbstractMuleValidator.validate(AbstractMuleValidator.java:53)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.validate(MuleConfigurationValidator.java:120)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:250)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:208)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:89)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:269)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:321)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:258)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:691)
+
+!ENTRY org.mule.tooling.core 4 0 2019-06-17 12:32:30.147
+!MESSAGE There was an unexpected exception running job: Validating teste-acesso-sap.xml
+!STACK 0
+java.lang.NullPointerException
+	at org.mule.tooling.core.MuleCorePlugin.getLog(MuleCorePlugin.java:311)
+	at org.mule.tooling.core.MuleCorePlugin.logError(MuleCorePlugin.java:240)
+	at org.mule.tooling.core.classloader.ProjectClasspathUtils.findMatchesInClasspath(ProjectClasspathUtils.java:527)
+	at org.mule.tooling.core.classloader.ProjectClasspathUtils.getJarInsideClassPath(ProjectClasspathUtils.java:162)
+	at org.mule.tooling.core.requirement.RequirementValidator$ValidateJarByFileName.run(RequirementValidator.java:218)
+	at org.mule.tooling.core.requirement.RequirementValidator.runValidation(RequirementValidator.java:121)
+	at org.mule.tooling.core.requirement.RequirementValidator.visitRequiredJar(RequirementValidator.java:99)
+	at org.mule.tooling.model.module.RequiredJar.accept(RequiredJar.java:39)
+	at org.mule.tooling.core.requirement.RequirementValidator.validate(RequirementValidator.java:78)
+	at org.mule.tooling.ui.modules.core.widgets.DefinitionElement.validateChildren(DefinitionElement.java:408)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainValidatorVisitor.enterNode(DomainValidatorVisitor.java:113)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:92)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:97)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.doValidate(MuleConfigurationValidator.java:177)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.collectErrorMessages(MuleConfigurationValidator.java:166)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.validate(MuleConfigurationValidator.java:134)
+	at org.mule.tooling.core.builder.TransformerUtils.getMuleConfigurationErrorsFromSource(TransformerUtils.java:176)
+	at org.mule.tooling.messageflow.editor.MultiPageMessageFlowEditor.doValidate(MultiPageMessageFlowEditor.java:1338)
+	at org.mule.tooling.messageflow.editor.MultiPageMessageFlowEditor$ValidateFromEditorJob.doRun(MultiPageMessageFlowEditor.java:1610)
+	at org.mule.tooling.core.utils.StudioDesignContextJob$1.call(StudioDesignContextJob.java:29)
+	at org.mule.tooling.core.utils.StudioDesignContextJob$1.call(StudioDesignContextJob.java:1)
+	at org.mule.tooling.core.StudioDesignContextRunner.runWithMuleProject(StudioDesignContextRunner.java:69)
+	at org.mule.tooling.core.utils.StudioDesignContextJob.run(StudioDesignContextJob.java:25)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.mule.tooling.core 4 0 2019-06-17 12:32:30.158
+!MESSAGE There was an unexpected exception running job: Validating teste-acesso-sap.xml
+!STACK 0
+java.lang.NullPointerException
+	at org.mule.tooling.core.MuleCorePlugin.getLog(MuleCorePlugin.java:311)
+	at org.mule.tooling.core.MuleCorePlugin.logError(MuleCorePlugin.java:240)
+	at org.mule.tooling.core.classloader.ProjectClasspathUtils.findMatchesInClasspath(ProjectClasspathUtils.java:527)
+	at org.mule.tooling.core.classloader.ProjectClasspathUtils.getJarInsideClassPath(ProjectClasspathUtils.java:162)
+	at org.mule.tooling.core.requirement.RequirementValidator$ValidateJarByFileName.run(RequirementValidator.java:218)
+	at org.mule.tooling.core.requirement.RequirementValidator.runValidation(RequirementValidator.java:121)
+	at org.mule.tooling.core.requirement.RequirementValidator.visitRequiredJar(RequirementValidator.java:99)
+	at org.mule.tooling.model.module.RequiredJar.accept(RequiredJar.java:39)
+	at org.mule.tooling.core.requirement.RequirementValidator.validate(RequirementValidator.java:78)
+	at org.mule.tooling.ui.modules.core.widgets.DefinitionElement.validateChildren(DefinitionElement.java:408)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainValidatorVisitor.enterNode(DomainValidatorVisitor.java:113)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:92)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:97)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.doValidate(MuleConfigurationValidator.java:177)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.collectErrorMessages(MuleConfigurationValidator.java:166)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.validate(MuleConfigurationValidator.java:134)
+	at org.mule.tooling.core.builder.TransformerUtils.getMuleConfigurationErrorsFromSource(TransformerUtils.java:176)
+	at org.mule.tooling.messageflow.editor.MultiPageMessageFlowEditor.doValidate(MultiPageMessageFlowEditor.java:1338)
+	at org.mule.tooling.messageflow.editor.MultiPageMessageFlowEditor$ValidateFromEditorJob.doRun(MultiPageMessageFlowEditor.java:1610)
+	at org.mule.tooling.core.utils.StudioDesignContextJob$1.call(StudioDesignContextJob.java:29)
+	at org.mule.tooling.core.utils.StudioDesignContextJob$1.call(StudioDesignContextJob.java:1)
+	at org.mule.tooling.core.StudioDesignContextRunner.runWithMuleProject(StudioDesignContextRunner.java:69)
+	at org.mule.tooling.core.utils.StudioDesignContextJob.run(StudioDesignContextJob.java:25)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)

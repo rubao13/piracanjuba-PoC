@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_rCu1IY7TEemeCOUC3E-_Nw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_rCu1Io7TEemeCOUC3E-_Nw" bindingContexts="_rCvcMY7TEemeCOUC3E-_Nw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;teste-acesso-sap.xml&quot; tooltip=&quot;teste-acesso-sap/src/main/app/teste-acesso-sap.xml&quot;>&#xA;&lt;persistable path=&quot;/teste-acesso-sap/src/main/app/teste-acesso-sap.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;mule-app.properties&quot; tooltip=&quot;teste-acesso-sap/src/main/app/mule-app.properties&quot;>&#xA;&lt;persistable path=&quot;/teste-acesso-sap/src/main/app/mule-app.properties&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;teste-acesso-sap.xml&quot; tooltip=&quot;teste-acesso-sap/src/main/app/teste-acesso-sap.xml&quot;>&#xA;&lt;persistable path=&quot;/teste-acesso-sap/src/main/app/teste-acesso-sap.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_rCu1Io7TEemeCOUC3E-_Nw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_sDnDUI7TEemeCOUC3E-_Nw" width="1024" height="741">
@@ -172,6 +172,7 @@
                 </children>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_tkUBH47TEemeCOUC3E-_Nw" elementId="bottom" containerData="4500" selectedElement="_tkUBII7TEemeCOUC3E-_Nw">
+                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_tkUBII7TEemeCOUC3E-_Nw" elementId="org.mule.tooling.properties.views.MulePropertiesView" ref="_sXFY8I7TEemeCOUC3E-_Nw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_tkUBIY7TEemeCOUC3E-_Nw" elementId="org.eclipse.ui.views.ProblemView" ref="_sC4DgI7TEemeCOUC3E-_Nw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_tkUBIo7TEemeCOUC3E-_Nw" elementId="org.eclipse.search.ui.views.SearchView" toBeRendered="false" ref="_sC_YQI7TEemeCOUC3E-_Nw"/>
@@ -193,7 +194,6 @@
       <children xsi:type="basic:PartStack" xmi:id="_sBx3UY7TEemeCOUC3E-_Nw" elementId="PartStack@14fff5e7" selectedElement="_1Gh1UI7TEemeCOUC3E-_Nw">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <tags>noFocus</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_1Gh1UI7TEemeCOUC3E-_Nw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="teste-acesso-sap" iconURI="platform:/plugin/org.mule.tooling.messageflow/icons/Mule-16x16.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.mule.tooling.messageflow.messageFlowEditor&quot; name=&quot;teste-acesso-sap.xml&quot; partName=&quot;teste-acesso-sap&quot; title=&quot;teste-acesso-sap&quot; tooltip=&quot;teste-acesso-sap/src/main/app/teste-acesso-sap.xml&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/teste-acesso-sap/src/main/app/teste-acesso-sap.xml&quot;/>&#xA;&lt;/editor>"/>
@@ -202,6 +202,12 @@
           <tags>removeOnHide</tags>
           <tags>activeOnClose</tags>
           <tags>active</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_kBNJYJETEemDvo-I3-rCKg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="mule-app.properties" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/file_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;mule-app.properties&quot; partName=&quot;mule-app.properties&quot; title=&quot;mule-app.properties&quot; tooltip=&quot;teste-acesso-sap/src/main/app/mule-app.properties&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/teste-acesso-sap/src/main/app/mule-app.properties&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;90&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.PropertiesFileEditor</tags>
+          <tags>removeOnHide</tags>
         </children>
       </children>
     </sharedElements>
@@ -373,11 +379,14 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_sKdSMI7TEemeCOUC3E-_Nw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_LV1U0I7vEem30Ou9nWn27w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_rEiL-o7TEemeCOUC3E-_Nw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_udykYJEQEemDvo-I3-rCKg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_rEiL-o7TEemeCOUC3E-_Nw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_sKdSMY7TEemeCOUC3E-_Nw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_sKdSMo7TEemeCOUC3E-_Nw" elementId="additions" toBeRendered="false"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_kx3xUJETEemDvo-I3-rCKg" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_s_Cw0I7TEemeCOUC3E-_Nw" elementId="org.eclipse.debug.ui.launchActionSet">
         <tags>Draggable</tags>
@@ -391,7 +400,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_sKegUI7TEemeCOUC3E-_Nw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_LV8pkI7vEem30Ou9nWn27w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_rEgWyo7TEemeCOUC3E-_Nw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ueM0EJEQEemDvo-I3-rCKg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_rEgWyo7TEemeCOUC3E-_Nw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_sKegUY7TEemeCOUC3E-_Nw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2598,7 +2607,7 @@
   <addons xmi:id="_rCvcPY7TEemeCOUC3E-_Nw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_rCvcPo7TEemeCOUC3E-_Nw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_rDBJAI7TEemeCOUC3E-_Nw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_KrR78Y7vEem30Ou9nWn27w" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_rD-yUI7TEemeCOUC3E-_Nw" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_rD-yUY7TEemeCOUC3E-_Nw" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>
